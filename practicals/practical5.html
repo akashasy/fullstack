@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image-Map</title>
 </head>
+<style>
+    div{
+        float: left;
+        font-size: large;
+        font-weight: bold;
+        border: solid black;
+        background-color: lightgrey;
+        display: block;
+        padding: 30px;
+    }
+    img{
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+        background-color:white;
+    }
+    .image
+    {
+       
+    background-color:greenyellow;
+    padding: 10px;
+    }
+</style>
 <body>
-
-    <a href="./html.html"><img src="./images/HTMLLOGO2.png" alt="HTML"></a>
-    <a href="./css.html"><img src="./images/css5.png" alt="CSS"></a>
-    <a href="./js.html"> <img src="./images/JAVASCRIPT.jpg" alt="JAVASCRIPT"></a>
-    <a href=""> <img src="./images/react.png" alt="REACT"></a>
+    <div>
+        <div><a href="./practical1.html" >Practical1</a></div>
+        <div>
+    <a href="./practical2.html">Practical2</a></div>
+    <div><a href="./practical3.html">Practical3</a></div>
+   <div> <a href="./practical4.html">Practical4</a></div>
+    <div><a href="./practical5.html">Practical5</a></div>
+    </div>
+    <div class="image">
+    <a href="./html.html"><img src="./images/HTMLLOGO2.png" alt="HTML" height="230px" width="200px"></a>
+    <a href="./css.html"><img src="./images/css5.png" alt="CSS" height="230px" width="200px"></a>
+    <a href="./js.html"> <img src="./images/JAVASCRIPT.jpg" alt="JAVASCRIPT" height="230px" width="200px"></a>
+    <img src="./images/react.png" alt="REACT" usemap="#react" height="205px" width="200px" style="background-color: white;">
+    <map name="react" id="react">
+        <area shape="circle" coords=" 77 66 88" href="./react.htm" alt="REACT">
+    </map>
+    </div>
 
 </body>
 </html>
