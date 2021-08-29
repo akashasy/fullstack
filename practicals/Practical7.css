@@ -1,0 +1,79 @@
+body{
+    background-image: url(./images/office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-transform: uppercase;
+}
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.menu
+{
+    background-color:gray;
+    text-align: center;
+}
+.menu ul
+{
+    list-style: none;
+    display: inline-flex;
+
+   
+}
+.menu ul li{
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color:wheat ;
+}
+.fa
+{
+    margin-right: 5px;
+}
+.menu ul li:hover , .active {
+    background-color: orangered;
+}
+.drop1,.drop2,.drop3,.drop4{
+    display: none;
+}
+.menu ul li:hover .drop1{
+    position: absolute;
+    display:inline-flex;
+    margin-top: 10px;
+    margin-left: -15px;
+    display: block;
+
+
+}
+.menu ul li:hover .drop1 ul{
+    display: block;
+    background-color: gray;
+}
+
+.menu ul li:hover .drop1 ul{
+display: block;
+
+}
+.menu ul li:hover .drop1 ul li
+{
+    background-color: transparent;
+    border-bottom: 1px solid;
+    width: 150px;
+}
+.menu ul li:hover .drop1 ul li a:hover{
+    color: orange;
+}
+.click:hover .drop2 , .click2:hover .drop3, .click3:hover .drop4{
+    display: block;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -37px;
+}
