@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assignment.js">
+    
+    <style>
+        body{
+            background-color: wheat;
+
+        }
+        #check{
+            margin: 5px 5px;
+            padding: 5px;
+        }
+        .interest{
+            display: block;
+        }
+        .web{
+            display: inline;
+        }
+        .and{
+            display: block;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+   <script>
+       function func(){
+           var name= document.forms.name;
+           
+           if(name==""){
+
+           
+           alert("enter valid value")
+           return false;
+       }
+       function fun(){
+           var roll= document.forms.roll.value;
+           if(isNaN(rol)){
+          document.getElementsByClassName("roll").innerHTML="enter numeric value only";
+           return false;
+       }
+}
+   </script>
+</head>
+<body>
+    <h2>Subject Choice Form</h2>
+    <form name="form" >
+    <label for="name" onclick="return func()">
+        First Name:
+    </label> <br>
+    <input type="text" class="name" ><br>
+    <label for="lname">
+        Last Name:
+    </label><br>
+    <input type="text" class="lname"><br>
+    <label for="Roll">
+        Unique Id:
+    </label><br>
+    <input type="text" class="roll" onblur="return fun()"><br>
+    <p>
+        Choose Your Favourite Programming Language:
+    </p>
+    
+        <input type="radio" id="Py"name="fav" value="python">
+        <label for="py">Python</label>
+        <br>
+        <input type="radio" id="ja" name="fav" value="java">
+        <label for="ja">Java</label>
+        <br>
+        <input type="radio" id="c" name="fav" value="java">
+        <label for="c">C++</label><br>
+       <p> Choose your subjects which you want to study this semester:[Any Three]</p>
+        <input type="checkbox" id="check" checked>
+        <label for="check" > English </label>
+        <input type="checkbox" id="check" >
+        <label for="check">
+           Maths
+        </label>
+        <input type="checkbox" id="check">
+        <label for="check">
+           Computer Organisation
+        </label>
+        <input type="checkbox" id="check">
+        <label for="check">
+          Introduction To Microprosser
+        </label>
+        <input type="checkbox" id="check">
+        <label for="check">Operating System
+        </label>
+        <div class="interest">
+        <p>Choose Your Interest:-</p>
+        <input type="radio" id="Web" name="dev" value="web development">
+       <div class="web"> <label for="web">
+            Web Development
+        </label></div>
+        
+        <div class="and"><input type="radio" id="AD" name="dev" value="android development">
+            <label for="web">
+            Android Development
+        </label></div>
+       <p> Choose medium of study:-</p>
+       <input type="radio" id="eng" name="lang" value="English" >
+         <label for="eng">
+            English
+        </label>
+        
+     <input type="radio" id="hin" name="lang" value="Hindi">
+            <label for="hin">
+            Hindi
+        </label>
+        <br>
+        
+    </form>
+</body>
+</html>

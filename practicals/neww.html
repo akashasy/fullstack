@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+      
+        .nav{
+           position: fixed;
+            top: 0;
+           
+            width: 100%;
+            height: 80px; background-color: gray;
+            
+           
+        }
+        .nav ul {
+           list-style: none;
+           padding: 0 20px;
+          float: right;
+           
+           
+            
+        }
+        .nav ul li{
+             display: inline-block;
+             line-height: 70px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            display: block;
+            transition: 0.6s;
+            padding: 0px 15px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .nav ul li a:hover,.show:hover,.hide:hover{
+            color: gold;
+            
+        }
+        .show,.hide{
+            font-size: 30px;
+           color: white;
+           line-height: 80px;
+           float: right;
+            display: none;
+           
+        }
+       
+        
+        #check{
+            visibility: hidden;
+            z-index: -10;
+            position: absolute;
+
+        }
+         @media  (max-width: 800px){
+             .show,.hide{
+                 display: block;
+             }
+            .nav ul{
+                position: fixed;
+                top=0;
+                right: -100%;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                padding: 80px 0px;
+                line-height: normal;
+            }
+            .nav li{
+                display: block;
+            }
+            .nav li a{
+                display: block;
+            }
+            #check:checked~ul{
+                right: 0;
+            }
+    
+         }
+         
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="show">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">about</a></li>
+                
+        <label for="check" class="hide">
+            <i class="fa fa-times"></i>
+          </label>
+            </ul>
+        </div>
+    
+</body>
+</html>
